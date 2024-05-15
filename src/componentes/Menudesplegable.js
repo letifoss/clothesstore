@@ -13,7 +13,7 @@ function Menudesplegable() {
 
     return (
         <div className="d-flex justify-content-center">
-            <button onClick={desplegarMenu} className={!desplegar ? 'botonmenu' : 'd-none'  }>Ver menú</button>
+            <button onClick={desplegarMenu} className={!desplegar ? 'botonmenu d-flex justify-content-center align-items-center' : 'd-none'  }>Ver menú</button>
             {desplegar && (
                 <nav className="menu">
                     <img src={logo} width={50} alt="Logo" />
@@ -22,7 +22,7 @@ function Menudesplegable() {
                     <a href="">Jeans</a>
                     <a href="">Ofertas</a>
 
-                    <button className="botonmenu ocultar" onClick={desplegarMenu}>Ocultar menú</button>
+                    <button className="botonmenu" onClick={desplegarMenu}>Ocultar menú</button>
                 </nav>
             )}
         </div>

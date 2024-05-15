@@ -31,9 +31,10 @@
         margin-top: 20px;
     }
     .producto{
-        width: 130px;
-        height: 200px;
+        width: 160px;
+        height: 220px;
         padding: 2px;
+        margin: 8px;
     }
     .productos img{
         width: 100px;
