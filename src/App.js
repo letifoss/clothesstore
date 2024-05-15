@@ -25,7 +25,7 @@ function App() {
       </header>
       <section>
       <h3 className="text-center mt-5">Conozca todos nuestros productos</h3>
-        <div className='d-flex flex-wrap  justify-content-center justify-content-lg-start align-items-center ml-5'>
+        <div className='d-flex flex-wrap justify-content-center align-items-center'>
         <Productos 
         imagen={Buzoblanco}
         nombre='Buzo blanco para mujer'

@@ -22,10 +22,24 @@
     margin: 15px;
     box-shadow: 3px 3px 10px gray;
     background-color: rgb(255, 255, 255);
-
+    font-size: 12px;
 }
 
-    
 
-
-
+@media screen and (max-width: 425px){
+    .productos{
+        margin-top: 20px;
+    }
+    .producto{
+        width: 130px;
+        height: 200px;
+        padding: 2px;
+    }
+    .productos img{
+        width: 100px;
+        height: 100px;
+    }
+    .productos .h5{
+        font-size: 10px;
+    }
+}
