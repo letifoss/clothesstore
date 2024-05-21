@@ -3,6 +3,7 @@ import '../styles/Menu.css';
 import logo from '../imagenes/logoropa.png'
 import { useState } from 'react';
 import Menudesplegable from './Menudesplegable';
+import { Link } from 'react-router-dom';
 
 
 
@@ -36,10 +37,10 @@ function Menu() {
             <>
                 <nav className="menu">
                     <img src={logo} width={50} alt="Logo" />
-                    <a href="">Mujeres</a>
-                    <a href="">Hombres</a>
-                    <a href="">Jeans</a>
-                    <a href="">Ofertas</a>
+                    <Link to="/inicio">Inicio</Link>
+                    <Link to="/mujeres">Mujeres</Link>
+                    <Link to="/hombres">Hombres</Link>
+                    <Link to="/ofertas">Ofertas</Link>
                 </nav>
                 <div className="alerta d-flex align-items-center">
                     <p>Envío gratis en compras de más de $100</p>

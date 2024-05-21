@@ -6,7 +6,7 @@ function Footer(){
     return(
     <footer class="footer">
         <div class="seccion logo">
-            <img src={logo} alt="logo" width={200} />
+            <img src={logo} alt="logo" width={150} />
         </div>
         <div class="seccion">
             <h3>Quiénes somos</h3>
@@ -22,7 +22,6 @@ function Footer(){
             <a href="">Envíos</a>
             <a href="">Devoluciones</a>
         </div>
-        <div></div>
     </footer>
     )
 }

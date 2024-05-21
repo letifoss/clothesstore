@@ -2,6 +2,7 @@ import React from "react";
 import '../styles/Menu.css';
 import logo from '../imagenes/logoropa.png'
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 function Menudesplegable() {
@@ -17,10 +18,10 @@ function Menudesplegable() {
             {desplegar && (
                 <nav className="menu">
                     <img src={logo} width={50} alt="Logo" />
-                    <a href="">Mujeres</a>
-                    <a href="">Hombres</a>
-                    <a href="">Jeans</a>
-                    <a href="">Ofertas</a>
+                    <Link to="/inicio">Inicio</Link>
+                    <Link to="/mujeres">Mujeres</Link>
+                    <Link to="/hombres">Hombres</Link>
+                    <Link to="/ofertas">Ofertas</Link>
 
                     <button className="botonmenu" onClick={desplegarMenu}>Ocultar menú</button>
                 </nav>
