@@ -1,3 +1,7 @@
+.seccionproductos{
+    width: 75%;
+}
+
 .productos{
     display: flex;
     flex-direction: column;
@@ -27,6 +31,9 @@
 
 
 @media screen and (max-width: 425px){
+    .seccionproductos{
+        width: 100%;
+    }
     .productos{
         margin-top: 20px;
     }

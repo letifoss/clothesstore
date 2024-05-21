@@ -23,9 +23,9 @@ function App() {
       <header>
         <Menu />
       </header>
-      <section>
+      <section className='d-flex flex-column align-items-center'>
       <h3 className="text-center mt-5">Conozca todos nuestros productos</h3>
-        <div className='d-flex flex-wrap justify-content-center align-items-center'>
+        <div className='seccionproductos d-flex flex-wrap justify-content-center align-items-center'>
         <Productos 
         imagen={Buzoblanco}
         nombre='Buzo blanco para mujer'
