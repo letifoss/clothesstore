@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 function Menu() {
     const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
 
@@ -37,10 +38,11 @@ function Menu() {
             <>
                 <nav className="menu">
                     <img src={logo} width={50} alt="Logo" />
-                    <Link to="/inicio">Inicio</Link>
+                    <Link to="/">Inicio</Link>
                     <Link to="/mujeres">Mujeres</Link>
                     <Link to="/hombres">Hombres</Link>
                     <Link to="/ofertas">Ofertas</Link>
+                    <Link to="/contacto">Contacto</Link>
                 </nav>
                 <div className="alerta d-flex align-items-center">
                     <p>Envío gratis en compras de más de $100</p>

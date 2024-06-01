@@ -5,6 +5,7 @@ import Inicio from './paginas/Inicio';
 import Mujeres from './paginas/Mujeres';
 import Hombres from './paginas/Hombres';
 import Ofertas from './paginas/Ofertas';
+import Contacto from './paginas/Contacto';
 import {Routes, Route, BrowserRouter as Router} from "react-router-dom";
 
 
@@ -17,10 +18,11 @@ function App() {
         <Menu />
       </header>
       <Routes>
-        <Route path="/inicio" element={<Inicio />} />
+        <Route path="/" element={<Inicio />} />
         <Route path="/mujeres" element={<Mujeres /> } />
         <Route path="/hombres" element={<Hombres />} />
         <Route path="/ofertas" element={<Ofertas />} />
+        <Route path="/contacto" element={<Contacto />} />
       </Routes>
       <footer>
         <Footer />
