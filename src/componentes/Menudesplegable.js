@@ -22,6 +22,7 @@ function Menudesplegable() {
                     <Link to="/mujeres">Mujeres</Link>
                     <Link to="/hombres">Hombres</Link>
                     <Link to="/ofertas">Ofertas</Link>
+                    <Link to="/contacto">Contacto</Link>
 
                     <button className="botonmenu" onClick={desplegarMenu}>Ocultar menú</button>
                 </nav>
