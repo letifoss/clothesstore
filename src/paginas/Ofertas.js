@@ -19,7 +19,7 @@ function inicio(){
         <section className='d-flex flex-column align-items-center'>
         <h3 className="text-center mt-5 mb-4">OFERTAS</h3>
         <h6 className="mb-4 text-center">Los productos que se muestran a continuación tienen un 40% OFF pagando contado</h6>
-          <div className='seccionproductos d-flex flex-wrap justify-content-center align-items-center'>
+          <div className='seccionproductos d-flex flex-wrap justify-content-center align-items-center justify-content-center justify-content-sm-center'>
           <Productos 
           imagen={Canguronegro}
           nombre='Canguro negro para mujer'

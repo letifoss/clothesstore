@@ -16,7 +16,7 @@ function Mujeres(){
     return(
         <section className='d-flex flex-column align-items-center'>
         <h3 className="text-center mt-5 mb-4">Mujeres</h3>
-          <div className='seccionproductos d-flex flex-wrap align-items-center'>
+          <div className='seccionproductos d-flex flex-wrap align-items-center justify-content-center justify-content-sm-center'>
           <Productos 
           imagen={Buzoblanco}
           nombre='Buzo blanco para mujer'

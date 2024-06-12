@@ -18,7 +18,7 @@ function App() {
         <Menu />
       </header>
       <Routes>
-        <Route path="/" element={<Inicio />} />
+        <Route path="" element={<Inicio />} />
         <Route path="/mujeres" element={<Mujeres /> } />
         <Route path="/hombres" element={<Hombres />} />
         <Route path="/ofertas" element={<Ofertas />} />

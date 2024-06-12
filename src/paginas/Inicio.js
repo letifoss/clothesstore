@@ -64,7 +64,6 @@ function inicio(){
           />
           </div>
         </section>
-        <Cotizacionapi />
         </>
     )
 
