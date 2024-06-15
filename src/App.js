@@ -14,9 +14,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <header>
         <Menu />
-      </header>
       <Routes>
         <Route path="" element={<Inicio />} />
         <Route path="/mujeres" element={<Mujeres /> } />

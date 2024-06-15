@@ -2,10 +2,10 @@
     height: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
     padding: 10px;
     font-family: 'Franklin Gothic Medium';
+    position: relative;
 }
 
 .menu a{
@@ -32,6 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .alerta p{
@@ -49,6 +50,7 @@
     width: 300px;
     height: 600px;
     background-color: black;
+    z-index: 99999;
 }
 
 .botonmenu{
@@ -60,7 +62,6 @@
     border-radius: 15px;
     padding: 8px;
     align-content: center;
-    margin-top: 8px;
 }
 
 @media screen and (max-width: 425px){
@@ -70,7 +71,6 @@
     }
     .alerta{
         text-align: center;
-        margin-top: 80px;
     }
     .alerta p{
         font-size: 12px;
