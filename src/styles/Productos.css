@@ -22,7 +22,7 @@
 }
 .producto{
     width: 220px;
-    height: 280px;
+    min-height: 280px;
     border: 1px solid rgb(179, 179, 179);
     padding: 3px;
     margin: 15px;
@@ -31,7 +31,15 @@
     font-size: 12px;
 }
 
+.producto button{
+    background-color: #455a72;
+    border: 0.5px solid black;
+    border-radius: 5%;
+}
 
+.producto button:hover{
+    background-color: #687079 ;
+}
 @keyframes start {
     from {
         opacity: 0;

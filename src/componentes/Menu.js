@@ -34,6 +34,7 @@ function Menu() {
                 <Link className="nav-link" to="/contacto">Contacto</Link>
             </li>
         </ul>
+        <a className="ml-auto mr-4 cart">🛒 </a>
     </div>
 </nav>
 

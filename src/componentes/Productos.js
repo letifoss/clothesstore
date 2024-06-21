@@ -3,6 +3,8 @@ import '../styles/Productos.css';
 
 
 function Productos (props) {
+
+
     return (
         <div>
             <div className="productos">
@@ -10,6 +12,7 @@ function Productos (props) {
                 <img src={props.imagen} alt={props.nombre} width={150} height={180} className="mt-3" />
                 <h6>{props.nombre}</h6>
                 <p className="border border-dark rounded p-1">{props.precio}</p>
+                <button className="p-1 mb-3">Agregar al carrito 🛒 </button>
             </a>
             </div>
         </div>
