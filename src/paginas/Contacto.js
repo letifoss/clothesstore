@@ -29,8 +29,8 @@ export default class Contacto extends React.Component {
     render() {
         return (
             <div className="d-flex flex-column align-items-center justify-content-center">
-                <h1 className="text-center mb-5 mt-5">Contáctanos!</h1>
-                <form onSubmit={this.submitted} className="contact d-flex flex-column">
+                <h1 className="text-center mt-4">Contáctanos!</h1>
+                <form onSubmit={this.submitted} className="contact d-flex flex-column seccioncontacto ">
                     <input type="text" placeholder="Nombre" className="p-1 m-2" onChange={this.changed}></input>
                     <input type="text" placeholder="Correo" className="p-1 m-2"></input>
                     <input type="text" placeholder="Asunto" className="p-1 m-2"></input>

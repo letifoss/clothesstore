@@ -4,6 +4,20 @@
     background-color:#375577;
 }
 
+.seccioncontacto{
+    animation-name: contact;
+    animation-duration: 1s;
+}
+
+@keyframes contact {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
 @media screen and (max-width: 425px) {
     .contact{
         padding: 15px
