@@ -21,7 +21,9 @@
 .menu a:hover{
     background-color: rgb(161, 199, 255);
 }
-
+.navbar{
+    padding: 0;
+}
 .navbar-toggler{
     background-color: #375577;
 }

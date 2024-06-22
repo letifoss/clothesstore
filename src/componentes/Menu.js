@@ -34,7 +34,7 @@ function Menu({ cartLength }) {
                 <Link className="nav-link" to="/contacto">Contacto</Link>
             </li>
         </ul>
-        <div className="ml-auto mr-2 d-flex flex-row justify-content-center align-items-center">
+        <div className="ml-auto mr-4 d-flex flex-row align-items-center">
                 <div><Link className="cartmenu" to="/cart">🛒</Link></div>
                 <div>{cartLength}</div>
                 
