@@ -1,12 +1,12 @@
 import React from 'react';
 import '../styles/Menu.css';
 import logo from '../imagenes/logoropa.png'
-import { useState } from 'react';
-import Menudesplegable from './Menudesplegable';
+
+
 import { Link } from 'react-router-dom';
 
 
-function Menu() {
+function Menu({ cartLength }) {
     return (
         <>
 <nav className="navbar navbar-expand-sm bg-light">
@@ -34,7 +34,11 @@ function Menu() {
                 <Link className="nav-link" to="/contacto">Contacto</Link>
             </li>
         </ul>
-        <a className="ml-auto mr-4 cart">🛒 </a>
+        <div className="ml-auto mr-2 d-flex flex-row justify-content-center align-items-center">
+                <div><Link className="cartmenu" to="/cart">🛒</Link></div>
+                <div>{cartLength}</div>
+                
+        </div>
     </div>
 </nav>
 
