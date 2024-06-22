@@ -9,6 +9,7 @@ import './App.css';
 import Mujeres from './paginas/Mujeres';
 import Hombres from './paginas/Hombres';
 import Ofertas from './paginas/Ofertas';
+import Contacto from './paginas/Contacto';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -33,6 +34,7 @@ function App() {
           <Route path="/mujeres" element={<Mujeres addToCart={addToCart} />} />
           <Route path="/hombres" element={<Hombres addToCart={addToCart}/>} />
           <Route path="/ofertas" element={<Ofertas addToCart={addToCart}/>} />
+          <Route path="/contacto" element={<Contacto />} />
           <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
         </Routes>
         <footer>
