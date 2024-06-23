@@ -16,24 +16,21 @@ function Productos({ producto, addToCart }) {
             setAlerta(false);
         }, 1500);
     };
-
     return (
-        <div className="productos">
-            <div className="producto d-flex flex-column align-items-center justify-content-center overflow-hidden text-center">
-                <img src={imagen} alt={nombre} width={150} height={180} className="mt-3" />
-                <h6>{nombre}</h6>
-                <p className="border border-dark rounded p-1">{precio}</p>
-                <button className="p-1 mb-3" onClick={handleAddToCart}>
-                    Agregar al carrito 🛒
-                </button>
-            </div>
+        <div className="producto d-flex flex-column align-items-center justify-content-center overflow-hidden text-center position-relative">
+            <img src={imagen} alt={nombre} width={150} height={180} className="mt-3" />
+            <h6>{nombre}</h6>
+            <p className="border border-dark rounded p-1">{precio}</p>
+            <button className="p-1 mb-3" onClick={handleAddToCart}>
+                Agregar al carrito 🛒
+            </button>
             {alerta && (
-                <div className="alert" role="alert">
+                <div className="alert alert-success position-absolute" role="alert">
                     ¡Agregado al carrito!
                 </div>
             )}
         </div>
     );
-}
+};
 
 export default Productos;

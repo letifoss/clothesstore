@@ -1,57 +1,63 @@
 .seccionproductos{
     width: 75%;
 }
-
-.productos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    animation-name: start;
-    animation-duration: 1s;
-}
-
-.productos a{
-    text-decoration: none;
-    color: #000000;
-    cursor: pointer;
-}
-
-.productos a:hover{
-    transform: scale(1.1); 
-}
-.producto{
-    width: 220px;
-    min-height: 280px;
-    border: 1px solid rgb(179, 179, 179);
-    padding: 3px;
-    margin: 15px;
-    box-shadow: 3px 3px 10px gray;
-    background-color: rgb(255, 255, 255);
-    font-size: 12px;
-    position: relative;
-}
-
-.producto button{
-    background-color: #9c9c9c;
-    border-radius: 5%;
-    border: 1px solid rgb(71, 71, 71);
-    color: black;
-}
-
-.producto button:hover{
-    background-color: #575757 ;
-}
-
-.alert{
-    position: absolute;
-    top:60%;
-    border: 0.5px solid rgb(156, 156, 156);
-    width: 200px;
-    background-color: rgba(37, 34, 34, 0.6);
-    color:white;
-
-}
+    .productos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        animation-name: start;
+        animation-duration: 1s;
+    }
+    
+    .productos a {
+        text-decoration: none;
+        color: #000000;
+        cursor: pointer;
+    }
+    
+    .productos a:hover {
+        transform: scale(1.1); 
+    }
+    
+    .producto {
+        position: relative;
+        width: 220px;
+        height: 320px;
+        border: 1px solid rgb(179, 179, 179);
+        padding: 3px;
+        margin: 15px;
+        box-shadow: 3px 3px 10px gray;
+        background-color: rgb(255, 255, 255);
+        font-size: 12px;
+    }
+    
+    .alert {
+        position: absolute;
+        top: 30%; 
+        left: 50%;
+        transform: translate(-50%, 0);
+        border: 0.5px solid rgb(0, 0, 0);
+        width: 200px;
+        background-color: rgba(37, 34, 34, 0.8); 
+        color: white;
+        z-index: 10; 
+        padding: 5px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    
+    .producto button {
+        background-color: #9c9c9c;
+        border-radius: 5%;
+        border: 1px solid rgb(71, 71, 71);
+        color: black;
+    }
+    
+    .producto button:hover {
+        background-color: #575757;
+    }
+    
 
 @keyframes start {
     from {
@@ -74,7 +80,7 @@
     }
     .producto{
         width: 160px;
-        height: 220px;
+        height: 320px;
         padding: 2px;
         margin: 8px;
     }
