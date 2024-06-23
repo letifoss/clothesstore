@@ -29,17 +29,30 @@
     box-shadow: 3px 3px 10px gray;
     background-color: rgb(255, 255, 255);
     font-size: 12px;
+    position: relative;
 }
 
 .producto button{
-    background-color: #c5c5c5;
+    background-color: #5d626d;
     border-radius: 5%;
     border: 1px solid rgb(39, 39, 39);
+    color: black;
 }
 
 .producto button:hover{
-    background-color: #687079 ;
+    background-color: #575757 ;
 }
+
+.alert{
+    position: absolute;
+    top:60%;
+    border: 0.5px solid rgb(156, 156, 156);
+    width: 200px;
+    background-color: rgba(37, 34, 34, 0.6);
+    color:white;
+
+}
+
 @keyframes start {
     from {
         opacity: 0;
