@@ -24,7 +24,7 @@ function Productos({ producto, addToCart }) {
     }
 
     return (
-        <div onClick={ampliarproducto} className={`producto ${tamañoproducto ? 'productoampliado' : ''} d-flex flex-column align-items-center justify-content-center overflow-hidden text-center position-relative`}>
+        <div onClick={ampliarproducto} className={`producto d-flex flex-column align-items-center justify-content-center overflow-hidden text-center position-relative`}>
             <img src={imagen} alt={nombre} width={150} height={180} className="mt-1 productoimg" />
             <h6>{nombre}</h6>
             <p className="border border-dark rounded p-1">{precio}</p>
