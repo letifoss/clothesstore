@@ -22,7 +22,8 @@ function Ofertas({ addToCart }) {
 
     return (
         <section className='d-flex flex-column align-items-center'>
-            <h3 className="text-center mt-5">Conozca todos nuestros productos</h3>
+            <h3 className="text-center mt-5">OFERTAS</h3>
+            <h5>40% OFF en productos seleccionados</h5>
             <div className='seccionproductos d-flex flex-wrap justify-content-center align-items-center'>
                 {productos.map(producto => (
                     <Productos key={producto.id} producto={producto} addToCart={addToCart} />

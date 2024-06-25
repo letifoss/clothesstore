@@ -1,5 +1,5 @@
 .seccionproductos{
-    width: 75%;
+    width: 85%;
 }
     .productos {
         display: flex;
@@ -22,14 +22,18 @@
     
     .producto {
         position: relative;
-        width: 220px;
+        width: 230px;
         height: 320px;
-        border: 1px solid rgb(179, 179, 179);
         padding: 3px;
         margin: 15px;
         box-shadow: 3px 3px 10px gray;
         background-color: rgb(255, 255, 255);
         font-size: 12px;
+    }
+
+    .producto h6{
+        font-size: 15px;
+        text-align: center;
     }
     
     .alert {
@@ -48,16 +52,29 @@
     }
     
     .producto button {
-        background-color: #9c9c9c;
+        background-color: #424242;
         border-radius: 5%;
         border: 1px solid rgb(71, 71, 71);
-        color: black;
+        color: rgb(192, 192, 192);
     }
     
     .producto button:hover {
         background-color: #575757;
     }
     
+    .productoampliado{
+        position: fixed;
+        width: 520px;
+        height: 620px;
+        font-size: 18px;
+        border: 1px solid rgb(179, 179, 179);
+        padding: 3px;
+        margin: 15px;
+        box-shadow: 3px 3px 10px gray;
+        background-color: rgb(255, 255, 255);
+        transform: scale(1.2);
+        z-index: 100;
+    }
 
 @keyframes start {
     from {
@@ -71,24 +88,38 @@
 
 
 
+
+/* MEDIA QUERYS */
+
 @media screen and (max-width: 480px){
     .seccionproductos{
         width: 100%;
     }
     .productos{
         margin-top: 20px;
+        
     }
     .producto{
-        width: 160px;
-        height: 320px;
-        padding: 2px;
-        margin: 8px;
+        width: 130px;
+        height: 280px;
+        padding: 0px;
+        margin-top: 10px;
     }
-    .productos img{
-        width: 100px;
-        height: 100px;
+    .productoimg{
+        width: 120px;
+        height: 120px;
     }
     .productos .h5{
         font-size: 10px;
     }
+
+    .producto button {
+        width: 125px;
+        height: 30px;
+    }
+
+    .producto h6{
+        font-size: 12px;
+    }
+
 }
