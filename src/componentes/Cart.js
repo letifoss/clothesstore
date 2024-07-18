@@ -12,7 +12,7 @@ function Cart({ cart, removeFromCart }) {
     const buildWhatsAppLink = () => {
         const baseURL = "https://wa.me/+59894451482"; 
         const message = cart.map(item => `${item.nombre} - ${item.precio}`).join("%0A");
-        return `${baseURL}?text=Hola,%20mi%20nombre%20es%20${encodeURIComponent(name)}.%0A Dirección%20de%20envío:%20${encodeURIComponent(dir)},%20${encodeURIComponent(city)}.%0A Número%20de%20contacto:%20${encodeURIComponent(tel)}.%0A He%20elegido%20estos%20productos:%0A${message}.`;
+        return `${baseURL}?text=Hola,%20mi%20nombre%20es%20${encodeURIComponent(name)}.%0ADirección%20de%20envío:%20${encodeURIComponent(dir)},%20${encodeURIComponent(city)}.%0ANúmero%20de%20contacto:%20${encodeURIComponent(tel)}.%0AHe%20elegido%20estos%20productos:%0A${message}.`;
     };
 
     const handleSendToWhatsApp = (e) => {
