@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
 import Menu from './componentes/Menu';
 import Footer from './componentes/Footer';
 import Inicio from './paginas/Inicio';
 import Cart from './componentes/Cart'; 
 import './App.css';
+import './styles/Menu.css';
+
 
 import Mujeres from './paginas/Mujeres';
 import Hombres from './paginas/Hombres';
@@ -25,10 +28,11 @@ function App() {
     setCart(updatedCart);
   };
 
+
   return (
     <div className="App">
       <Router>
-        <Menu cartLength={cart.length} />
+        <Menu cartLength={cart.length}/>
         <Routes>
           <Route path="/" element={<Inicio addToCart={addToCart} />} />
           <Route path="/mujeres" element={<Mujeres addToCart={addToCart} />} />

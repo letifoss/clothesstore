@@ -94,6 +94,19 @@
     font-size: 24px;
 }
 
+.buttonmode{
+    color: black;
+
+}
+
+.modooscuro{
+    background-color: #051427;
+}
+.productomodooscuro{
+    background-color: #051427;
+}
+
+
 @media screen and (max-width: 425px){
     .menu{
         flex-direction: column;
