@@ -18,15 +18,52 @@ function Menu({ cartLength }) {
     useEffect(() => {
         if (modopantalla) {
             document.body.classList.add('modooscuro');
+            document.getElementById('menu').classList.add('bg-dark');
+            document.querySelector('h3').classList.add('text-white')
+            document.querySelectorAll('.nav-link').forEach(function(textmenu) {
+                textmenu.classList.add('text-white');
+              });
+              document.querySelector('.buttonmode').classList.add('text-white');
+              
+              const productos = document.getElementsByClassName('producto');
+              for (let i = 0; i<productos.length; i++) {
+                productos[i].classList.add('bg-dark');
+              };
+              
+              document.querySelectorAll('h6').forEach(function(names) {
+                names.classList.add('text-white');
+              });
+              document.querySelectorAll('p').forEach(function(prices){
+                prices.classList.add('text-white')
+        });
+              
+        
         } else {
             document.body.classList.remove('modooscuro');
+            document.getElementById('menu').classList.remove('bg-dark')
+            document.querySelector('h3').classList.remove('text-white')
+            document.querySelectorAll('.nav-link').forEach(function(textmenu) {
+                textmenu.classList.remove('text-white');
+              });
+            document.querySelector('.buttonmode').classList.remove('text-white');
+            const productos = document.getElementsByClassName('producto');
+            for (let i = 0; i<productos.length; i++) {
+              productos[i].classList.remove('bg-dark');
+            };
+            document.querySelectorAll('h6').forEach(function(names) {
+                names.classList.remove('text-white');
+              });
+              document.querySelectorAll('p').forEach(function(prices){
+                prices.classList.remove('text-white')
+        });
+
         }
     }, [modopantalla]);
     
 
     return (
         <>
-    <nav className="navbar navbar-expand-sm bg-light">
+    <nav id = "menu" className="navbar navbar-expand-sm bg-light">
     <a className="navbar-brand" href="/">
         <img src={logo} width={50} alt="Logo" />
     </a>

@@ -29,7 +29,7 @@ function Inicio({ addToCart }) {
             <div className='seccionproductos d-flex flex-wrap justify-content-center align-items-center'>
                 {productos.map(producto => (
                     <Productos key={producto.id} producto={producto} addToCart={addToCart} />
-                ))}
+                ))}            
             </div>
         </section>
     );
